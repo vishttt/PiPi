@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F5BB92C2-991C-A908-EBD8-DB92BE997D18}</ProjectGuid>
+    <ProjectGuid>{B9C6D865-C907-46B2-674E-F09AD3FB2E2D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -74,7 +74,6 @@
      <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
-     <None Include="Assets\RTL Plugin\License - Terms.txt" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\FacebookSDK\SDK\Scripts\Canvas\Resources\JSSDKBindings.txt" />
      <None Include="Assets\Shader\Mask.shader" />
@@ -128,25 +127,22 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="ArabicSupport">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/ArabicSupport/Plugins/ArabicSupport.dll</HintPath>
+ <HintPath>C:/Users/lamlt/Documents/GitHub/PiPi/Assets/ArabicSupport/Plugins/ArabicSupport.dll</HintPath>
  </Reference>
  <Reference Include="Prime31MenuItem">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/Editor/Prime31/Prime31MenuItem.dll</HintPath>
+ <HintPath>C:/Users/lamlt/Documents/GitHub/PiPi/Assets/Editor/Prime31/Prime31MenuItem.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/lamlt/Documents/GitHub/PiPi/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="P31RestKit">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/Plugins/P31RestKit.dll</HintPath>
+ <HintPath>C:/Users/lamlt/Documents/GitHub/PiPi/Assets/Plugins/P31RestKit.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/lamlt/Documents/GitHub/PiPi/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
- </Reference>
- <Reference Include="RTL">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/RTL Plugin/Plugins/RTL.dll</HintPath>
+ <HintPath>C:/Users/lamlt/Documents/GitHub/PiPi/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -172,11 +168,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{20AE64F4-73DD-4ADC-0158-E540B8AA33AE}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{B89734F1-B365-E8E6-63A4-8A08C088B196}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{3940D7BB-E7E4-D962-2643-295C38A1E972}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{18628207-9F3D-65EB-64FB-87BBC27441A4}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript.unityproj">
-      <Project>{6471080F-8190-5054-605B-C086B773C09D}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+      <Project>{4AF2C0AC-A62E-D989-E260-C711B0045301}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

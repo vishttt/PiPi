@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using RTLService;
+
 using System.IO;
 using ArabicSupport;
 
@@ -185,13 +185,12 @@ public class GameEngine : MonoBehaviour
 
 		try {
 			if (questionList.Image [currentQuestionNum] != "") {
-				ManuManager._instance.mainQuestion2.text = RTL.Convert (questionList.QuestionDesc [currentQuestionNum], RTL.NumberFormat.Arabic, false);
+				ManuManager._instance.mainQuestion2.text = questionList.QuestionDesc [currentQuestionNum];
 				ManuManager._instance.Qimage.gameObject.SetActive (true);
 				Rect rect = new Rect (0, 0, BackEnd.instance.QImages [questionList.QuestionId [currentQuestionNum]].width, BackEnd.instance.QImages [questionList.QuestionId [currentQuestionNum]].height);
 				ManuManager._instance.Qimage.sprite = Sprite.Create (BackEnd.instance.QImages [questionList.QuestionId [currentQuestionNum]], rect, new Vector2 (0.5f, 0.5f));
 			} else {
-				ManuManager._instance.mainQuestion.text = RTL.ConvertWordWrap (" " + questionList.QuestionDesc [currentQuestionNum] + " ", 150, null, RTL.NumberFormat.Arabic, false);
-				//ManuManager._instance.mainQuestion.text = RTL.ConvertWordWrap ("زيبنازمهستيزمتسيمن منسيزمنساي نما مايسمنز اسيمن زمنسي ازمن ايسمنزاسنمزامنساز منسا مزناس منزنسا زمنسبا زمناسب زمناسبمنز ابنماز نمبازمن بسمنز سبنم " + questionList.QuestionDesc [currentQuestionNum] + " ", 150, null, RTL.NumberFormat.Arabic, false);
+				ManuManager._instance.mainQuestion.text =" " + questionList.QuestionDesc [currentQuestionNum] + " ";
 			}
 		} catch {
 			Debug.Log ("currentQuestionNum Error out of range");
@@ -202,16 +201,16 @@ public class GameEngine : MonoBehaviour
 		foreach (Text answer in ManuManager._instance.answers) {
 			answer.transform.parent.GetComponent<Image> ().color = Color.white;
 			if (answer.name == correctanswer.ToString ()) {
-				answer.text = RTL.Convert (" " + questionList.CAnswer [currentQuestionNum] + " ", RTL.NumberFormat.Arabic, false);
+				answer.text = " " + questionList.CAnswer [currentQuestionNum] + " ";
 			} else {
 				wrongAnswers.Add (answer);
 			}
 		}
 	
 		Debug.Log (wrongAnswers.Count + "  wrongAnswers count");
-		wrongAnswers [0].text = RTL.Convert (" " + questionList.FAnswer1 [currentQuestionNum] + " ", RTL.NumberFormat.Arabic, false);
-		wrongAnswers [1].text = RTL.Convert (" " + questionList.FAnswer2 [currentQuestionNum] + " ", RTL.NumberFormat.Arabic, false);
-		wrongAnswers [2].text = RTL.Convert (" " + questionList.FAnswer3 [currentQuestionNum] + " ", RTL.NumberFormat.Arabic, false);
+		wrongAnswers [0].text = " " + questionList.FAnswer1 [currentQuestionNum] + " ";
+		wrongAnswers [1].text =" " + questionList.FAnswer2 [currentQuestionNum] + " ";
+		wrongAnswers [2].text = " " + questionList.FAnswer3 [currentQuestionNum] + " ";
 
 		StopCoroutine ("CoStartQuestionTimer");
 		StopCoroutine ("CoMoveTimerBar");
@@ -325,7 +324,7 @@ public class GameEngine : MonoBehaviour
 
 		setMultiplayerQColor (int.Parse (questionList.CategoryId [currentQuestionNum]) - 1);
 		if (questionList.Image [currentQuestionNum] != "") {
-			ManuManager._instance.mMainQuestion2.text = RTL.Convert (questionList.QuestionDesc [currentQuestionNum], RTL.NumberFormat.Context, false);
+			ManuManager._instance.mMainQuestion2.text =questionList.QuestionDesc [currentQuestionNum];
 			ManuManager._instance.mMainQuestion.text = "";
 			ManuManager._instance.mQimage.gameObject.SetActive (true);
 			Rect rect = new Rect (0, 0, BackEnd.instance.QImages [questionList.QuestionId [currentQuestionNum]].width, BackEnd.instance.QImages [questionList.QuestionId [currentQuestionNum]].height);
@@ -333,7 +332,7 @@ public class GameEngine : MonoBehaviour
 		} else {
 			ManuManager._instance.mQimage.gameObject.SetActive (false);
 			ManuManager._instance.mMainQuestion2.text = "";
-			ManuManager._instance.mMainQuestion.text = RTL.ConvertWordWrap (" " + questionList.QuestionDesc [currentQuestionNum] + " ", 150, null, RTL.NumberFormat.Arabic, false);
+			ManuManager._instance.mMainQuestion.text = " " + questionList.QuestionDesc [currentQuestionNum] + " ";
 		}
 
 		wrongAnswers.Clear ();
@@ -343,16 +342,16 @@ public class GameEngine : MonoBehaviour
 			answer.transform.parent.GetComponent<Image> ().color = Color.white;
 
 			if (answer.name == correctanswer.ToString ()) {
-				answer.text = RTL.Convert (" " + questionList.CAnswer [currentQuestionNum] + " ", RTL.NumberFormat.Arabic, false);
+				answer.text = " " + questionList.CAnswer [currentQuestionNum] + " ";
 			} else {
 				wrongAnswers.Add (answer);
 			}
 		}
 
 		Debug.Log (wrongAnswers.Count + "  wrongAnswers count");
-		wrongAnswers [0].text = RTL.Convert (" " + questionList.FAnswer1 [currentQuestionNum] + " ", RTL.NumberFormat.Arabic, false);
-		wrongAnswers [1].text = RTL.Convert (" " + questionList.FAnswer2 [currentQuestionNum] + " ", RTL.NumberFormat.Arabic, false);
-		wrongAnswers [2].text = RTL.Convert (" " + questionList.FAnswer3 [currentQuestionNum] + " ", RTL.NumberFormat.Arabic, false);
+		wrongAnswers [0].text = " " + questionList.FAnswer1 [currentQuestionNum] + " ";
+		wrongAnswers [1].text = " " + questionList.FAnswer2 [currentQuestionNum] + " ";
+		wrongAnswers [2].text = " " + questionList.FAnswer3 [currentQuestionNum] + " ";
 
 		MPointsSys.GetComponent<QuestionPointSystem> ().NextPoint (currentQuestionNum);
 
@@ -391,7 +390,7 @@ public class GameEngine : MonoBehaviour
 
 		if (player1Score == player2Score) {
 			//You are draw , set the draw massage
-			ManuManager._instance.mFinalResultWord.text = RTL.Convert ("تعادل", RTL.NumberFormat.Context, false);
+			ManuManager._instance.mFinalResultWord.text = "تعادل";
 			ManuManager._instance.mFinalResultWord.transform.parent.GetComponent<Image> ().color = Color.green;
 			ManuManager._instance.mExtraScoreAmount.text = "1";
 			BackEnd.instance.currentPlayer.TotalScore = (int.Parse (BackEnd.instance.currentPlayer.TotalScore) + 1).ToString ();
@@ -403,10 +402,10 @@ public class GameEngine : MonoBehaviour
 				friendResultbg.color = Color.green;
 
 			foreach (Text playerResultText in ManuManager._instance.mPlayerResultText)
-				playerResultText.text = RTL.Convert ("", RTL.NumberFormat.Context, false);
+				playerResultText.text = "";
 
 			foreach (Text friendResultText in ManuManager._instance.mFriendResultText)
-				friendResultText.text = RTL.Convert ("", RTL.NumberFormat.Context, false);
+				friendResultText.text = "";
 
 			//PlayEffect
 			ManuManager._instance.mExtraScoreAmountAnim.text = "+1";
@@ -419,7 +418,7 @@ public class GameEngine : MonoBehaviour
 
 		} else if (player1Score > player2Score) {
 			//You are won , set the win massage
-			ManuManager._instance.mFinalResultWord.text = RTL.Convert ("مبروك لقد ربحت", RTL.NumberFormat.Context, false);
+			ManuManager._instance.mFinalResultWord.text ="مبروك لقد ربحت";
 			ManuManager._instance.mFinalResultWord.transform.parent.GetComponent<Image> ().color = Color.green;
 			ManuManager._instance.mExtraScoreAmount.text = "3";
 			BackEnd.instance.currentPlayer.TotalScore = (int.Parse (BackEnd.instance.currentPlayer.TotalScore) + 3).ToString ();
@@ -431,10 +430,10 @@ public class GameEngine : MonoBehaviour
 				friendResultbg.color = Color.red;
 
 			foreach (Text playerResultText in ManuManager._instance.mPlayerResultText)
-				playerResultText.text = RTL.Convert ("الفائز", RTL.NumberFormat.Context, false);
+				playerResultText.text = "الفائز";
 
 			foreach (Text friendResultText in ManuManager._instance.mFriendResultText)
-				friendResultText.text = RTL.Convert ("الخاسر", RTL.NumberFormat.Context, false);
+				friendResultText.text = "الخاسر";
 
 			//PlayEffect
 			ManuManager._instance.mExtraScoreAmountAnim.text = "+1";
@@ -447,7 +446,7 @@ public class GameEngine : MonoBehaviour
 			
 		} else {
 			//You are Loss , set the loss massage
-			ManuManager._instance.mFinalResultWord.text = RTL.Convert ("حظا موفقا المرة المقبلة", RTL.NumberFormat.Context, false);
+			ManuManager._instance.mFinalResultWord.text ="حظا موفقا المرة المقبلة";
 			ManuManager._instance.mFinalResultWord.transform.parent.GetComponent<Image> ().color = Color.red;
 			ManuManager._instance.mExtraScoreAmount.text = "0";
 
@@ -458,10 +457,10 @@ public class GameEngine : MonoBehaviour
 				friendResultbg.color = Color.green;
 
 			foreach (Text playerResultText in ManuManager._instance.mPlayerResultText)
-				playerResultText.text = RTL.Convert ("الخاسر", RTL.NumberFormat.Context, false);
+				playerResultText.text = "الخاسر";
 
 			foreach (Text friendResultText in ManuManager._instance.mFriendResultText)
-				friendResultText.text = RTL.Convert ("الفائز", RTL.NumberFormat.Context, false);
+				friendResultText.text = "الفائز";
 
 			SoundManager._instance.PlaySound (SoundManager._instance.lose);
 			BackEnd.instance.PostScore (int.Parse (BackEnd.instance.currentPlayer.PlayerID), 10, int.Parse (ManuManager._instance.mPlayerResult.text.Split ('/') [0])

@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using RTLService;
 
 public class ResultFeild : MonoBehaviour
 {
@@ -29,7 +28,7 @@ public class ResultFeild : MonoBehaviour
 
 	public void PSetName (string _name)
 	{
-		Pname.text = RTL.Convert (_name, RTL.NumberFormat.Arabic, false);
+		Pname.text =_name;
 	}
 
 	public void PSetRank (string _rank)
@@ -49,7 +48,7 @@ public class ResultFeild : MonoBehaviour
 
 	public void FSetName (string _name)
 	{
-		Fname.text = RTL.Convert (_name, RTL.NumberFormat.Arabic, false);
+		Fname.text = _name;
 	}
 
 	public void FSetRank (string _rank)
@@ -79,21 +78,21 @@ public class ResultFeild : MonoBehaviour
 
 		if (playerResult == FriendResult) {
 			//Draw
-			ResultText.text = RTL.Convert ("تعادل");
+			ResultText.text = "تعادل";
 			ResultBG.color = Color.green;
 			PResultBG.color = Color.green;
 			FResultBG.color = Color.green;
 
 		} else if (playerResult < FriendResult) {
 			//Lose
-			ResultText.text = RTL.Convert ("خاسر");
+			ResultText.text = "خاسر";
 			ResultBG.color = Color.red;
 			PResultBG.color = Color.red;
 			FResultBG.color = Color.green;
 
 		} else {
 			//Won
-			ResultText.text = RTL.Convert ("فائز");
+			ResultText.text = "فائز";
 			ResultBG.color = Color.green;
 			PResultBG.color = Color.green;
 			FResultBG.color = Color.red;

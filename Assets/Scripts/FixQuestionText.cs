@@ -2,7 +2,7 @@
 using System.Collections;
 using ArabicSupport;
 using UnityEngine.UI;
-using RTLService;
+
 
 
 public class FixQuestionText : MonoBehaviour
@@ -18,7 +18,7 @@ public class FixQuestionText : MonoBehaviour
 		//Debug.Log (QuestionText.text.Split ('\n') [0]);
 		//QuestionText.text = ArabicFixer.Fix (QuestionText.text, false, false);
 		Debug.Log (QuestionText.text);
-		QuestionText.text = RTL.ConvertWordWrap (InputText, 110, null, RTL.NumberFormat.Context, false);
+		QuestionText.text = InputText;
 	}
 
 	// Update is called once per frame

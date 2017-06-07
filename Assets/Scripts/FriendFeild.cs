@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using RTLService;
 
 public class FriendFeild : MonoBehaviour
 {
@@ -21,7 +20,7 @@ public class FriendFeild : MonoBehaviour
 
 	public void SetName (string _name)
 	{
-		name.text = RTL.Convert (_name, RTL.NumberFormat.Arabic, false);
+		name.text =_name;
 	}
 
 	public void SetRank (string _rank)

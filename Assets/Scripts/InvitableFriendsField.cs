@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using RTLService;
+
 
 public class InvitableFriendsField : MonoBehaviour
 {
@@ -19,7 +19,7 @@ public class InvitableFriendsField : MonoBehaviour
 
 	public void SetName (string _name)
 	{
-		name.text = RTL.Convert (_name, RTL.NumberFormat.Arabic, false);
+		name.text = _name;
 	}
 
 	public void SetBtn (bool _active)

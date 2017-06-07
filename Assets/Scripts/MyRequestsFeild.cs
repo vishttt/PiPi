@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using RTLService;
+
 using System;
 
 public class MyRequestsFeild : MonoBehaviour
@@ -28,7 +28,7 @@ public class MyRequestsFeild : MonoBehaviour
 
 	public void SetName (string _name)
 	{
-		name.text = RTL.Convert (_name, RTL.NumberFormat.Arabic, false);
+		name.text = _name;
 	}
 
 	public void SetRank (string _rank)

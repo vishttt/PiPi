@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using RTLService;
+
 
 public class FakeGamePlayer : Photon.MonoBehaviour
 {

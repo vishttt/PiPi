@@ -6,7 +6,6 @@ using System.IO;
 using System;
 using UnityEngine.UI;
 using System.Text;
-using RTLService;
 
 public class BackEnd : MonoBehaviour
 {
@@ -349,7 +348,7 @@ public class BackEnd : MonoBehaviour
 					foreach (Text text in ManuManager._instance.friendName) {
 						string s = "الله";
 						string s2 = "الّله";
-						text.text = RTL.Convert (fakePlayer.PlayerName.Replace (s, s2) + " ", RTL.NumberFormat.Context, false);
+						text.text =fakePlayer.PlayerName.Replace (s, s2) + " ";
 					}
 
 					foreach (Text text in ManuManager._instance.friendScore) {

@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3940D7BB-E7E4-D962-2643-295C38A1E972}</ProjectGuid>
+    <ProjectGuid>{18628207-9F3D-65EB-64FB-87BBC27441A4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -220,7 +220,6 @@
      <Compile Include="Assets\PhotonChatApi\ChatState.cs" />
      <Compile Include="Assets\PhotonChatApi\ChatUserStatus.cs" />
      <Compile Include="Assets\PhotonChatApi\IChatClientListener.cs" />
-     <Compile Include="Assets\RTL Plugin\DemoScript.cs" />
      <Compile Include="Assets\Scripts\AutoUnloackLevels.cs" />
      <Compile Include="Assets\Scripts\BackEnd.cs" />
      <Compile Include="Assets\Scripts\CorrectAswersText.cs" />
@@ -268,7 +267,6 @@
      <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
-     <None Include="Assets\RTL Plugin\License - Terms.txt" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\FacebookSDK\SDK\Scripts\Canvas\Resources\JSSDKBindings.txt" />
      <None Include="Assets\Shader\Mask.shader" />
@@ -292,19 +290,16 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="ArabicSupport">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/ArabicSupport/Plugins/ArabicSupport.dll</HintPath>
+ <HintPath>C:/Users/lamlt/Documents/GitHub/PiPi/Assets/ArabicSupport/Plugins/ArabicSupport.dll</HintPath>
  </Reference>
  <Reference Include="P31RestKit">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/Plugins/P31RestKit.dll</HintPath>
+ <HintPath>C:/Users/lamlt/Documents/GitHub/PiPi/Assets/Plugins/P31RestKit.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/lamlt/Documents/GitHub/PiPi/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
- </Reference>
- <Reference Include="RTL">
- <HintPath>C:/Users/lamlt/Downloads/QandAGame-master/QandAGame-master/Assets/RTL Plugin/Plugins/RTL.dll</HintPath>
+ <HintPath>C:/Users/lamlt/Documents/GitHub/PiPi/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -315,7 +310,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{20AE64F4-73DD-4ADC-0158-E540B8AA33AE}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{B89734F1-B365-E8E6-63A4-8A08C088B196}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

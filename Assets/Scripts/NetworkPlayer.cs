@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using RTLService;
+
 
 public class NetworkPlayer : Photon.MonoBehaviour
 {
@@ -110,7 +110,7 @@ public class NetworkPlayer : Photon.MonoBehaviour
 			Debug.Log (playerName + " " + deviceId + " ++++++++++++++++++++++++++++++++++++++");
 
 			foreach (Text text in ManuManager._instance.friendName) {
-				text.text = playerName;//RTL.Convert (playerName, RTL.NumberFormat.Context, false);
+				text.text = playerName;
 			}
 
 			foreach (Text text in ManuManager._instance.friendScore) {

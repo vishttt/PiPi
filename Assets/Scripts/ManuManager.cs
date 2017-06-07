@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Prime31;
-using RTLService;
+
 using Facebook.Unity;
 
 public class ManuManager : MonoBehaviour
@@ -143,7 +143,7 @@ public class ManuManager : MonoBehaviour
 	public void SetPlayerNameText ()
 	{
 		foreach (Text name in playerName) {
-			name.text = BackEnd.instance.currentPlayer.PlayerName;//RTL.Convert (BackEnd.instance.currentPlayer.PlayerName, RTL.NumberFormat.Context, false);
+			name.text = BackEnd.instance.currentPlayer.PlayerName;
 		}
 
 		foreach (Text score in PlayerTotalScore) {
@@ -211,25 +211,25 @@ public class ManuManager : MonoBehaviour
 	{
 		if (GameEngine._instance.NumofCorrectAnswers > 9) {
 			//Exlent
-			FinalResultText.text = RTL.Convert ("ممتاز", RTL.NumberFormat.Context, false);
+			FinalResultText.text = "ممتاز";
 			SoundManager._instance.PlaySound (SoundManager._instance.win);
 		}
 
 		if (GameEngine._instance.NumofCorrectAnswers > 7 && GameEngine._instance.NumofCorrectAnswers < 10) {
 			//very good
-			FinalResultText.text = RTL.Convert ("جيد جدا", RTL.NumberFormat.Context, false);
+			FinalResultText.text = "جيد جدا";
 			SoundManager._instance.PlaySound (SoundManager._instance.tie);
 		}
 
 		if (GameEngine._instance.NumofCorrectAnswers > 5 && GameEngine._instance.NumofCorrectAnswers < 8) {
 			//good
-			FinalResultText.text = RTL.Convert ("جيد", RTL.NumberFormat.Context, false);
+			FinalResultText.text = "جيد";
 			SoundManager._instance.PlaySound (SoundManager._instance.tie);
 		}
 
 		if (GameEngine._instance.NumofCorrectAnswers < 6) {
 			//bad
-			FinalResultText.text = RTL.Convert ("لابأس", RTL.NumberFormat.Context, false);
+			FinalResultText.text = "لابأس";
 			SoundManager._instance.PlaySound (SoundManager._instance.lose);
 		}
 	}
@@ -290,7 +290,7 @@ public class ManuManager : MonoBehaviour
 		string s = ManuManager._instance.levelsObjects [GameEngine._instance.SelectedLevel].transform.FindChild ("HeaderName").GetComponent<Text> ().text;
 		switch (categoryName) {
 		case "1":
-			t = RTL.Convert ("تاريخ", RTL.NumberFormat.Context, false) + " - " + s;
+			t = "تاريخ" + " - " + s;
 			QBackGround.color = levelsColors [int.Parse (categoryName) - 1];
 			barBG.color = new Color (levelsColors [int.Parse (categoryName) - 1].r, levelsColors [int.Parse (categoryName) - 1].g, levelsColors [int.Parse (categoryName) - 1].b, 0.3f);
 			fillBarBG.color = levelsColors [int.Parse (categoryName) - 1];
@@ -300,7 +300,7 @@ public class ManuManager : MonoBehaviour
 			}
 			break;
 		case "2":
-			t = RTL.Convert ("تراث", RTL.NumberFormat.Context, false) + " - " + s;
+			t = "تراث" + " - " + s;
 			QBackGround.color = levelsColors [int.Parse (categoryName) - 1];
 			barBG.color = new Color (levelsColors [int.Parse (categoryName) - 1].r, levelsColors [int.Parse (categoryName) - 1].g, levelsColors [int.Parse (categoryName) - 1].b, 0.3f);
 			fillBarBG.color = levelsColors [int.Parse (categoryName) - 1];
@@ -310,7 +310,7 @@ public class ManuManager : MonoBehaviour
 			}
 			break;
 		case "3":
-			t = RTL.Convert ("معالم", RTL.NumberFormat.Context, false) + " - " + s;
+			t = "معالم" + " - " + s;
 			QBackGround.color = levelsColors [int.Parse (categoryName) - 1];
 			barBG.color = new Color (levelsColors [int.Parse (categoryName) - 1].r, levelsColors [int.Parse (categoryName) - 1].g, levelsColors [int.Parse (categoryName) - 1].b, 0.3f);
 			fillBarBG.color = levelsColors [int.Parse (categoryName) - 1];
@@ -320,7 +320,7 @@ public class ManuManager : MonoBehaviour
 			}
 			break;
 		case "4":
-			t = RTL.Convert ("دين", RTL.NumberFormat.Context, false) + " - " + s;
+			t = "دين" + " - " + s;
 			QBackGround.color = levelsColors [int.Parse (categoryName) - 1];
 			barBG.color = new Color (levelsColors [int.Parse (categoryName) - 1].r, levelsColors [int.Parse (categoryName) - 1].g, levelsColors [int.Parse (categoryName) - 1].b, 0.3f);
 			fillBarBG.color = levelsColors [int.Parse (categoryName) - 1];
@@ -330,7 +330,7 @@ public class ManuManager : MonoBehaviour
 			}
 			break;
 		case "5":
-			t = RTL.Convert ("ملوك", RTL.NumberFormat.Context, false) + " - " + s;
+			t = "ملوك" + " - " + s;
 			QBackGround.color = levelsColors [int.Parse (categoryName) - 1];
 			barBG.color = new Color (levelsColors [int.Parse (categoryName) - 1].r, levelsColors [int.Parse (categoryName) - 1].g, levelsColors [int.Parse (categoryName) - 1].b, 0.3f);
 			fillBarBG.color = levelsColors [int.Parse (categoryName) - 1];
@@ -340,7 +340,7 @@ public class ManuManager : MonoBehaviour
 			}
 			break;
 		case "6":
-			t = RTL.Convert ("رياضة", RTL.NumberFormat.Context, false) + " - " + s;
+			t = "رياضة"+ " - " + s;
 			QBackGround.color = levelsColors [int.Parse (categoryName) - 1];
 			barBG.color = new Color (levelsColors [int.Parse (categoryName) - 1].r, levelsColors [int.Parse (categoryName) - 1].g, levelsColors [int.Parse (categoryName) - 1].b, 0.3f);
 			fillBarBG.color = levelsColors [int.Parse (categoryName) - 1];
@@ -350,7 +350,7 @@ public class ManuManager : MonoBehaviour
 			}
 			break;
 		case "7":
-			t = RTL.Convert ("صور", RTL.NumberFormat.Context, false) + " - " + s;
+			t = "صور" + " - " + s;
 			QBackGround.color = levelsColors [int.Parse (categoryName) - 1];
 			barBG.color = new Color (levelsColors [int.Parse (categoryName) - 1].r, levelsColors [int.Parse (categoryName) - 1].g, levelsColors [int.Parse (categoryName) - 1].b, 0.3f);
 			fillBarBG.color = levelsColors [int.Parse (categoryName) - 1];
