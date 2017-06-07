@@ -1,0 +1,22 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FacebookSDK/SDK/Scripts/Utils/FacebookLogger.cs">
+    <Files>
+      <File FileName="Assets/Scripts/BackEnd.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AutoUnloackLevels.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FBScripts/FBGraph.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ManuManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameEngine.cs" Line="1" Column="1" />
+      <File FileName="Assets/FacebookSDK/SDK/Scripts/Utils/FacebookLogger.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerMatches.cs" Line="1" Column="1" />
+      <File FileName="Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FileManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MyRequestsFeild.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FriendsRequestsFeild.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

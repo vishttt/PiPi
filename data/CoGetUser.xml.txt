@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'>
+<Player>
+<Header>success</Header>
+<PlayerID>162</PlayerID>
+<PlayerName>abc@gmail.com</PlayerName>
+<TotalScore>0</TotalScore>
+<WrongAnswersNbr>0</WrongAnswersNbr><CorrectAnswersNbr>0</CorrectAnswersNbr><TotalWonPlays>0</TotalWonPlays><TotalLostPlays>0</TotalLostPlays>
+<UserRank>1</UserRank>
+<FbId>0</FbId>
+<image>http%3A%2F%2Fmyloadblancer-941018846.us-west-2.elb.amazonaws.com%2Fksa%2Flogin.php%3Fuser%3D162</image></Player>

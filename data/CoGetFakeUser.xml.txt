@@ -1,0 +1,1 @@
+<?xml version='1.0' encoding='UTF-8'?><Player><Header></Header><PlayerID>8</PlayerID><PlayerName>???? ?????</PlayerName><TotalScore>67</TotalScore><UserRank>2</UserRank><image>http%3A%2F%2Fmyloadblancer-941018846.us-west-2.elb.amazonaws.com%2Fksa%2Ffimg.php%3Fp%3D8</image></Player>
