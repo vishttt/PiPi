@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: add4b68a37d294aa2828e93c36594fdd
+timeCreated: 1496937171
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: UVN Bai Sau
+  fontNames:
+  - UVN Bai Sau
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
