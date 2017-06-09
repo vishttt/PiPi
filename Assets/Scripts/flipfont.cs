@@ -4,7 +4,6 @@ using UnityEngine.UI;
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using ArabicSupport;
 
 //using Syst![alt text][1]em.Collections.Generic;
 
@@ -28,7 +27,6 @@ public class flipfont : MonoBehaviour
 	void Awake ()
 	{
 		myText = GetComponent<Text> ();
-		sampleString = ArabicFixer.Fix (sampleString);
 		//if (sampleString.Length > 50)
 		//numberOfAlphabetsInSingleLine = (sampleString.Length / 15) + numberOfAlphabetsInSingleLine;
 		Debug.Log ("numberOfAlphabets = " + numberOfAlphabetsInSingleLine + "number of character strings = " + sampleString.Length);

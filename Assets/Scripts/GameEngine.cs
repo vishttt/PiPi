@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 using System.IO;
-using ArabicSupport;
 
 
 public class GameEngine : MonoBehaviour

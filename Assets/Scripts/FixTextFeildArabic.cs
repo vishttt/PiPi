@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using ArabicSupport;
 using UnityEngine.UI;
 
 
@@ -20,7 +19,7 @@ public class FixTextFeildArabic : MonoBehaviour
 	void Update ()
 	{
 		if (fieldString != inputField.text) {
-			text.text = ArabicFixer.Fix (inputField.text, false, false);
+			text.text =inputField.text;
 			fieldString = inputField.text;
 		}
 	}

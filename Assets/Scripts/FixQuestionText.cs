@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using ArabicSupport;
 using UnityEngine.UI;
 
 
@@ -14,9 +13,7 @@ public class FixQuestionText : MonoBehaviour
 	void Start ()
 	{
 		QuestionText = gameObject.GetComponent<Text> ();
-		//TextWidth = QuestionText.rectTransform.rect.width;
-		//Debug.Log (QuestionText.text.Split ('\n') [0]);
-		//QuestionText.text = ArabicFixer.Fix (QuestionText.text, false, false);
+
 		Debug.Log (QuestionText.text);
 		QuestionText.text = InputText;
 	}
@@ -24,14 +21,10 @@ public class FixQuestionText : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-//		if (QuestionText != QuestionTextString) {
-//			text.text = ArabicFixer.Fix (QuestionText.text, false, false);
-//			fieldString = inputField.text;
-//		}
+
 	}
 
 	void OnGUI ()
 	{
-		//	GUI.Label (QuestionText.rectTransform.rect, QuestionText.text, null);
 	}
 }
