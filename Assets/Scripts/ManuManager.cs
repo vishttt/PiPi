@@ -15,7 +15,6 @@ public class ManuManager : MonoBehaviour
 	public RawImage InputprofilePic;
 	public List<RawImage> profilePics;
 	public Image profilePic;
-	public Texture2D test;
 	public Material profilePicMatl;
 	public List<GameObject> levelsObjects;
 	public Button nextLevelBtn;
